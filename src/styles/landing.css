@@ -1,0 +1,49 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.landing-grid {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-content: center;
+
+    position: absolute;
+    height: max-content;
+}
+
+.landing-grid-dashboard {
+    background-image: url("../assets/landing-page-dashboard.jpeg");
+}
+
+.landing-grid-system {
+    background-image: url("../assets/landing-page.jpeg");
+}
+
+.landing-grid-signup {
+    background-image: url("../assets/landing-page.jpeg");
+}
+
+.landing-card {
+    margin: 5rem auto;
+    width: 75%;
+    height: max-content;
+}
+
+/* 600px and smaller */
+@media only screen and (max-width: 600px) {
+    .landing-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .landing-card {
+        margin: 2rem auto;
+    }
+  }
+  
