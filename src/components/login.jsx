@@ -7,8 +7,8 @@ class LoginPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            email: 'sajal.sood@gmail.com',
-            password: 'Admin@123',
+            email: '',
+            password: '',
             errorMessage: ''
         };
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -57,11 +57,11 @@ class LoginPage extends Component {
                         <Form onSubmit={this.handleSubmit} id="login_form">
                             <Form.Group controlId="formHorizontalEmail">
                                 <Form.Label>Email</Form.Label>
-                                <Form.Control name="email" value="sajal.sood@gmail.com"  placeholder="Enter email" className="form-control" type="email"  onChange={this.handleChange} required />
+                                <Form.Control name="email"  placeholder="Enter email" className="form-control" type="email"  onChange={this.handleChange} required />
                             </Form.Group>
                             <Form.Group controlId="formHorizontalPassword">
                                 <Form.Label>Password</Form.Label>
-                                <Form.Control name="password" value="Admin@123" placeholder="Enter password" className="form-control" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain: at least one number, one uppercase, lowercase letter, and at least 8 or more characters" onChange={this.handleChange} required />
+                                <Form.Control name="password" placeholder="Enter password" className="form-control" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain: at least one number, one uppercase, lowercase letter, and at least 8 or more characters" onChange={this.handleChange} required />
                             </Form.Group>
                             <Form.Group>
                                 <Button className="btn btn-dark btn-lg btn-block" type="submit">Login</Button>
