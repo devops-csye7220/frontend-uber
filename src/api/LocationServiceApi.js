@@ -4,8 +4,6 @@ require('dotenv').config();
 
 const api_url = process.env.REACT_APP_SERVER_URL + "/api/locations" || "http://localhost:3001/api/cars";
 
-// const api_url =  "/api/locations" || "http://localhost:3001/api/locations";
-
 class LocationServiceApi {
     getAllLocations() {
         return axios.get(api_url);
