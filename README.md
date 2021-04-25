@@ -6,9 +6,9 @@
    -  We can view all the bookings or even modify them.
 
 # Technical Stack
+   - Google Cloud Platform
    - ReactJs
    - Nginx
-   - Google Cloud Platform
    - Provisioning and Configuration Management: Terraform
 
 # Prerequisites
