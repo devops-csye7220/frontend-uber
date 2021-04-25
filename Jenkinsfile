@@ -5,7 +5,7 @@ node {
     }
 
     stage('Build App') {
-         sh "npm install && npm run build"
+        sh "npm install && npm run build"
     }
 
     stage('Docker Build and Push') {
