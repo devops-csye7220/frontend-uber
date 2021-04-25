@@ -82,7 +82,7 @@ affinity: {}
 
 config:
   api:
-    host: "a621138f188eb4bb597051259e0bd498-606431044.us-east-1.elb.amazonaws.com"
+    host: "a621138f188eb4bb597051259e0bd498-606431044.us-east-1.elb.amazonaws.com:3001"
   docker:
     jsonB64: ewoJImF1dGhzIjogewoJCSJodHRwczovL2luZGV4LmRvY2tlci5pby92MS8iOiB7CgkJCSJhdXRoIjogImNtbHphR0ZpYURJeWN6bzJNamswTnpkaE5TMW1ZMll5TFRReVlqY3RZakZtTnkxbFltTXlNall6WTJFM04yVT0iCgkJfQoJfQp9
 
