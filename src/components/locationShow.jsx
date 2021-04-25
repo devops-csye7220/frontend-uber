@@ -139,5 +139,5 @@ function CarDescriptionComponent(props) {
 }
 
 export default GoogleApiWrapper({
-    apiKey: process.env.MAP_API_URL
+    apiKey: "AIzaSyAIt4zpzH_STYDrjE5_9jg_F1Hc_sOphkY"
 })(LocationShowPage);
