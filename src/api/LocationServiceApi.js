@@ -4,7 +4,7 @@ require('dotenv').config();
 
 //const api_url = process.env.REACT_APP_SERVER_URL + "/api/cars" || "http://localhost:3001/api/cars";
 
-const api_url = "http://a9bd39ff6d9f54a87819aa0ffe8f3cd4-1562206384.us-east-1.elb.amazonaws.com:3001/api/locations" || "http://localhost:3001/api/locations";
+const api_url = "/api/locations" || "http://localhost:3001/api/locations";
 
 class LocationServiceApi {
     getAllLocations() {
