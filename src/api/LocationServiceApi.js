@@ -1,6 +1,9 @@
 /* Location service APIs */
 import axios from 'axios';
 require('dotenv').config();
+
+//const api_url = process.env.REACT_APP_SERVER_URL + "/api/cars" || "http://localhost:3001/api/cars";
+
 const api_url = "/api/locations" || "http://localhost:3001/api/locations";
 
 class LocationServiceApi {

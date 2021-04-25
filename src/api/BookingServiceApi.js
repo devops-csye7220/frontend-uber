@@ -2,7 +2,11 @@
 import axios from 'axios';
 import UserServiceApi from './UserServiceApi';
 require('dotenv').config();
-const api_url = process.env.REACT_APP_SERVER_URL + "/api/bookings" || "http://localhost:3001/api/bookings";
+
+//const api_url = process.env.REACT_APP_SERVER_URL + "/api/bookings" || "http://localhost:3001/api/bookings";
+
+const api_url = "/api/bookings" || "http://localhost:3001/api/bookings";
+
 
 class BookingServiceApi {
     getNextBooking() {
