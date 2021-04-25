@@ -5,7 +5,14 @@ node {
     }
 
     stage('Build App') {
-        sh "npm install && npm run build"
+        withCredentials([string(credentialsId: 'backend-server-url', variable: 'BACKEND_SERVER_URL')]){
+            sh """#!/bin/bash
+                    export REACT_APP_SERVER_URL=$BACKEND_SERVER_URL
+                    npm install && npm run build
+                """
+            
+            ""
+        }
     }
 
     stage('Docker Build and Push') {

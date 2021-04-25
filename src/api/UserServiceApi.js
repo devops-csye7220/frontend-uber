@@ -2,9 +2,9 @@
 import axios from 'axios';
 import jwt_decode from 'jwt-decode';
 
-// const api_url = process.env.REACT_APP_SERVER_URL + "/api/users" || "http://localhost:3001/api/users";
+const api_url = process.env.REACT_APP_SERVER_URL + "/api/users" || "http://localhost:3001/api/users";
 
-const api_url =  "/api/users" || "http://localhost:3001/api/users";
+// const api_url =  "/api/users" || "http://localhost:3001/api/users";
 
 // for user JWT storage
 export const TOKEN_SESSION_ATTRIBUTE_NAME = 'token';
