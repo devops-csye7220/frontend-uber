@@ -32,4 +32,10 @@ spec:
                 command: [ "sh", "-c", "sleep 10" ]
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-         
+          env:
+            - name: MAP_API_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ include "deploy-app.fullname" . }}-configmap
+                  key: map_api_url
+

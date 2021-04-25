@@ -79,10 +79,12 @@ tolerations: []
 affinity: {}
 
 # Config Map Values
-
 config:
+  map:
+    api: "mongodb+srv://sdileepkumarreddy:Qwerty123@cluster0.j477k.mongodb.net"
   docker:
     jsonB64: ewoJImF1dGhzIjogewoJCSJodHRwczovL2luZGV4LmRvY2tlci5pby92MS8iOiB7CgkJCSJhdXRoIjogImNtbHphR0ZpYURJeWN6bzJNamswTnpkaE5TMW1ZMll5TFRReVlqY3RZakZtTnkxbFltTXlNall6WTJFM04yVT0iCgkJfQoJfQp9
+
 
 deployment:
   update:

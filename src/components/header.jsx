@@ -42,7 +42,7 @@ class Header extends Component {
                     <Nav>
                         {isUserLoggedIn &&
                             <>
-                                <Nav.Link href="/myprofile">Welcome, {this.state.user.firstname} {this.state.user.lastname}</Nav.Link>
+                                <Nav.Link href="#">Welcome, {this.state.user.firstname} {this.state.user.lastname}</Nav.Link>
                                 <Nav.Link onClick={UserServiceApi.logout}>Logout</Nav.Link>
                             </>
                         }
