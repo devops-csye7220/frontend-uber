@@ -25,6 +25,13 @@ node {
         }
     }
 
+    stage('Set Config To GCP') {
+        sh """#!/bin/bash
+                export KUBECONFIG=/var/lib/jenkins/.kube/gcp-kube-config.yaml
+                export GOOGLE_APPLICATION_CREDENTIALS=/var/lib/jenkins/.kube/service-account-credentials.json
+        """
+    }
+
     stage('Install Release') {
         sh """#!/bin/bash
                 LATEST_GIT_HASH=`cat latest_git_hash`
