@@ -25,15 +25,10 @@ node {
         }
     }
 
-    stage('Set Config To GCP') {
+    stage('Install Release') {
         sh """#!/bin/bash
                 export KUBECONFIG=/var/lib/jenkins/.kube/gcp-kube-config.yaml
                 export GOOGLE_APPLICATION_CREDENTIALS=/var/lib/jenkins/.kube/service-account-credentials.json
-        """
-    }
-
-    stage('Install Release') {
-        sh """#!/bin/bash
                 LATEST_GIT_HASH=`cat latest_git_hash`
                 if helm status --namespace default frontend-uber &> /dev/null; then
                     helm upgrade --namespace default --set image.tag=\${LATEST_GIT_HASH} frontend-uber ./helm
