@@ -96,15 +96,18 @@ class MyBookingPage extends Component {
             <div className="booking-list-grid">
                 <div>
                     {this.state.errorMessage && <Alert variant="danger">
-                        <Alert.Heading>Error obtaining bookings!</Alert.Heading>
                         <p>
                             {this.state.errorMessage}
                         </p>
                     </Alert>}
                 </div>
                 <div>
+                    {this.state.bookings.length == 0 && <Alert variant="warning">
+                        <p>Currently, you do not have any bookings. Please check back later.</p>
+                    </Alert>}
+
                     <div className="booking-list-block">
-                        {this.state.bookings.map((booking,idx) =>
+                        {this.state.bookings.length > 0 && this.state.bookings.map((booking,idx) =>
                             <Card bg="light" key={idx}>
                                 <Card.Body>
                                     <Card.Title>
